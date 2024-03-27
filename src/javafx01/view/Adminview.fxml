@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx01.controller.Viewcontroller">
+   <children>
+      <TableView fx:id="table" layoutX="17.0" layoutY="5.0" prefHeight="406.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="password" prefWidth="558.0" text="账号                                                     密码" />
+        </columns>
+      </TableView>
+      <Button layoutX="272.0" layoutY="419.0" mnemonicParsing="false" onAction="#loadReservationsFromFile" text="刷新" />
+      <Label layoutX="97.0" layoutY="477.0" text="删除账号" />
+      <TextField fx:id="account" layoutX="196.0" layoutY="472.0" />
+      <Button fx:id="delete" layoutX="469.0" layoutY="472.0" mnemonicParsing="false" onAction="#deleteReservationFromFileButtonClicked" text="删除" />
+      <Button layoutX="542.0" layoutY="472.0" mnemonicParsing="false"  onAction="#back" text="返回" />
+   </children>
+</Pane>

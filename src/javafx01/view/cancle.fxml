@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="784.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx01.controller.canclecontroller">
+   <children>
+      <TableView fx:id="table" layoutX="47.0" layoutY="63.0" prefHeight="396.0" prefWidth="657.0">
+        <columns>
+          <TableColumn fx:id="seat" prefWidth="209.0" text="预约座位" />
+            <TableColumn fx:id="account1" prefWidth="209.0" text="学号" />
+            <TableColumn fx:id="time1" prefWidth="232.0" text="预约时间" />
+        </columns>
+      </TableView>
+      <Label layoutX="85.0" layoutY="522.0" text="查询" />
+      <TextField fx:id="cheakseatid" layoutX="292.0" layoutY="517.0" />
+      <Label layoutX="176.0" layoutY="522.0" text="查询座位号" />
+      <Button layoutX="598.0" layoutY="510.0" mnemonicParsing="false" onAction="#loadReservationsFromFile" prefHeight="44.0" prefWidth="66.0" text="刷新" />
+      <Button layoutX="391.0" layoutY="629.0" mnemonicParsing="false" onAction="#deleteReservationFromFileButtonClicked" text="删除" />
+      <Button layoutX="597.0" layoutY="629.0" mnemonicParsing="false" onAction="#back" text="返回" />
+   </children>
+</Pane>
